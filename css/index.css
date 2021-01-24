@@ -1,4 +1,4 @@
-body {
+    body {
     margin: 0;
 }
 
@@ -37,3 +37,25 @@ td {
     width: 133px;
     height: 133px;
 }
+
+td {
+    position: relative;
+}
+
+.shape {
+    position: absolute;
+    width: 100px;
+    object-fit: cover;
+    top: 13px;
+    bottom: 0;
+    right: 0;
+    left: 13px;
+}
+
+.ex {
+    width: 100px;
+    object-fit: cover;
+    top: 13px;
+    bottom: 0;
+    right: 0;
+    left: 13px;
