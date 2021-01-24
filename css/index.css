@@ -1,12 +1,33 @@
  body {
      margin: 0;
- }
- 
- table {
      display: flex;
      justify-content: center;
-     height: 100vh;
      align-items: center;
+     flex-direction: column;
+     height: 100vh;
+ }
+ 
+ .player-panel {
+     display: flex;
+     font-size: 40px;
+ }
+ 
+ .player-panel img {
+     width: 60px;
+     height: 60px;
+     margin-right: 16px;
+ }
+ 
+ .player-panel div {
+     display: flex;
+     align-items: center;
+     margin-right: 16px;
+     margin-left: 16px;
+     margin-bottom: 32px;
+ }
+ 
+ .player-inactive {
+     opacity: 0.5;
  }
  
  table td {
@@ -62,4 +83,18 @@
      bottom: 0;
      right: 0;
      left: 13px;
+ }
+ 
+ .horizontal-line {
+     height: 10px;
+     background-color: rgba(0, 0, 0, 0.5);
+     width: 300px;
+     position: absolute;
+     z-index: 50;
+     transform: scaleX(0.0);
+     transition: transoform 225ms ease-in-out;
+ }
+ 
+ .make-vertical {
+     transform: rotate(90deg) scaleX(0.0);
  }
